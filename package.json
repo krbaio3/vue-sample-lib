@@ -1,11 +1,14 @@
 {
-  "name": "dummylib",
+  "name": "dummyButton",
   "version": "0.1.0",
   "private": true,
+  "main": "./dist/dummyButton.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-lib":"vue-cli-service build --target lib --name dummyButton src/main.ts --mode production",
+    "generate-lib":"vue-cli-service build --target lib --name dummyButton src/components/DummyButton.vue --mode production"
   },
   "dependencies": {
     "core-js": "^3.4.3",
